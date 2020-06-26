@@ -1,11 +1,12 @@
 const dotenv = require('dotenv');
-
+dotenv.config();
 /**
  * @const {Knex} db
+ *
  */
 const db = require('./db');
 
-dotenv.config();
+
 
 setInterval(async () => {
 	await generateTemperature();
